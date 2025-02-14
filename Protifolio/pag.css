@@ -1,0 +1,40 @@
+/* styles.css */
+body {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  header {
+    display: flex;
+    justify-content: center; /*Centraliza o conteudo*/
+    padding: 1rem 2rem; /*1rem=16px */
+    align-items: center;
+  }
+  
+  .menu {
+    list-style: none; /* Sobre a Lista: None é o tipo de 1. ou . */
+    display: flex;
+    gap: 50px; /* Espaçamento entre os componetes*/
+    margin: 10;
+    padding: 0;
+    align-items: center;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+
+  .menu li:hover {
+    transform: translateY(-5px);
+    background-color: #ff5733; /* Muda para laranja ao passar o mouse */
+    color: #fffacd; /* Muda a cor do texto para um amarelo claro */
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
+
+}
+  
+  .menu li a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+  }
